@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    /*max-width: 100%;*/
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px; /* 设置底部边距 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-item {
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 2px;
+    margin-bottom: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.year {
+    font-size: 1.5em;
+    color: #f07c82;
+    font-weight: bold;
+    margin-bottom: 10px; /* 增加间距 */
+}
+
+.company,
+.university {
+    font-size: 0.95em;
+    color: #0f59a4;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 0.95em;
+    color: #41b349;
+    /*margin-top: 5px;*/
+    font-style: italic;
+}
+
+.description_text {
+    font-size: 1.05em;
+    color: #555;
+}
+
+
+.formal-text {
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 2px;
+    margin-bottom: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.formal-text:hover {
+    transform: translateY(-5px);
+}
+
+/*超链接显示样式*/
+.custom-link{
+    text-decoration: none; /* 移除默认下划线 */
+    color: #28a745; /* 字体颜色 */
+    background-color: #f9f9f9; /* 背景颜色 */
+    padding: 2px 3px; /* 内边距 */
+    padding-left: 10px; /* 左侧内边距，约等于两个空格 */
+    border-radius: 2px; /* 圆角 */
+    font-family: 'Arial', sans-serif; /* 字体 */
+    /*font-weight: bold; !* 字体加粗 *!*/
+    transition: background-color 0.3s, transform 0.2s; /* 添加过渡效果 */
+    display: inline-block; /* 使其变为块级元素，支持边距和填充 */
+}
+
+.custom-link:hover {
+    background-color: #f9f9f9; /* 悬停时背景颜色 */
+    transform: scale(1.05); /* 悬停时放大效果 */
+}
+
+/*.custom-link:visited {*/
+/*    color: #f07c82; !* 已访问链接的颜色 *!*/
+/*}*/
+
+.introduction_text{
+    color: black; /* 字体颜色 */
+    font-weight: bold;
+}

@@ -266,8 +266,8 @@ aside_content .card-info .author-info__description {
 }
 #footer {
     position: relative;
-    margin-top: 3rem;
-    font-size : 5px;
+    margin-top: 5px;
+    font-size : 12px;
     background-attachment: local;
     background-position: bottom;
     background-size: cover;
@@ -371,9 +371,9 @@ aside_content .card-info .author-info__description {
     background-color: #000000be;
 }
 
-.dark-mode a {
-    color: #00ff6a80
-}
+/*.dark-mode a {*/
+/*    color: #00ff6a80*/
+/*}*/
 
 .dark-mode #page {
     background-color: #252525;
@@ -383,9 +383,16 @@ aside_content .card-info .author-info__description {
     color: #ffffffbe;
 }
 
-.dark-mode .card-content {
+.dark-mode .card-content,
+.dark-mode .formal-text,
+.dark-mode .introduction_text{
     background-color: #252525;
     color: #ffffffbe;
+}
+
+.dark-mode .custom-link{
+    background-color: #252525;
+    color: #28a745;
 }
 
 .dark-mode #footer {
@@ -398,4 +405,10 @@ aside_content .card-info .author-info__description {
 
 .dark-mode .skill-bar-percent {
     color: #ffffffab;
+}
+
+.dark-mode .container,
+.dark-mode .experience-item{
+    background-color: #252525;
+    color: #ffffffbe;
 }

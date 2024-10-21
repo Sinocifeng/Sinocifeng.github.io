@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif; /* 使用清晰的字体 */
+    background-color: #f9f9f9; /* 背景色 */
+    color: #333; /* 字体颜色 */
+    margin: 20px;
+}
+
+h3 {
+    color: #007BFF; /* 主题颜色 */
+    border-bottom: 2px solid #007BFF; /* 添加底部边框 */
+    padding-bottom: 5px; /* 内边距 */
+}
+
+.section-title {
+    font-weight: bold; /* 加粗 */
+    font-size: 1.2em; /* 字体大小 */
+    margin: 15px 0 5px; /* 外边距 */
+}
+
+ul {
+    list-style-type: none; /* 去掉列表项前面的标记 */
+    padding: 0; /* 去掉内边距 */
+}
+
+li {
+    margin: 10px 0; /* 列表项之间的间距 */
+}
+
+a {
+    text-decoration: none; /* 去掉下划线 */
+    color: #007BFF; /* 链接颜色 */
+    transition: color 0.3s; /* 添加过渡效果 */
+}
+
+a:hover {
+    color: #0056b3; /* 悬停时的颜色 */
+}
