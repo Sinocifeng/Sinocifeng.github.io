@@ -4,7 +4,7 @@
 function email() {
     swal({
         title: "E-mail",
-        text: "taozi.n@qq.com",
+        text: "1459736568@qq.com",
         buttons: ["Copy", true],
     })
         .then((OK) => {
