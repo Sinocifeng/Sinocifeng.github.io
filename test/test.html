@@ -3,41 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中英文切换示例</title>
+    <title>Language Switcher with File</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
         }
-        .hidden {
-            display: none; /* 用于隐藏元素 */
-        }
     </style>
 </head>
 <body>
 
-<h1 class="text-en">Welcome to the Language Switcher Example!</h1>
-<h1 class="text-cn hidden">欢迎来到语言切换示例！</h1>
+<div id="content">
+    <h1 id="title">aaaaaaaaaa</h1>
+    <p id="paragraph1"></p>
+    <p id="paragraph2"></p>
+</div>
+<button id="languageButton" onclick="toggleLanguage()">Switch Language</button>
+<p style="margin-top: 20px;">Click the button above to switch between English and Chinese.</p>
 
-<p class="text-en">This is a simple example of how to switch languages on a webpage.</p>
-<p class="text-cn hidden">这是一个简单的示例，展示如何在网页上切换语言。</p>
-
-<button onclick="toggleLanguage()">Switch Language</button>
-
-<script>
-    function toggleLanguage() {
-        const englishTexts = document.querySelectorAll('.text-en');
-        const chineseTexts = document.querySelectorAll('.text-cn');
-
-        englishTexts.forEach(text => {
-            text.classList.toggle('hidden'); // 切换英文文本的可见性
-        });
-
-        chineseTexts.forEach(text => {
-            text.classList.toggle('hidden'); // 切换中文文本的可见性
-        });
-    }
-</script>
+<script src="../assets/js/switch_language.js" defer></script>
 
 </body>
 </html>

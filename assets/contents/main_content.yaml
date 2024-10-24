@@ -1,47 +1,39 @@
-{
-  en: {
-    subtitle01: "Personal Experience",
-    languageButton: "切换中文 / Switch Chinese",
-    university01: "Nanjing University of Aeronautics and Astronautics (211 - Nanjing, Jiangsu)",
-    university02: "AVIC Chengdu Aircraft Industry (Group) Co., Ltd (Chengdu, Sichuan)",
-    university03: "Shaanxi Normal University (211 - Xi'an, Shaanxi)",
-    role01: "Major: Software Engineering",
-    role02: "Work: Software Engineering Technician",
-    role03: "Major: Software Engineering",
+en:
+  subtitle01: "Personal Experience"
+  languageButton: "切换中文 / Switch Chinese"
+  university01: "Nanjing University of Aeronautics and Astronautics (211 - Nanjing, Jiangsu)"
+  university02: "AVIC Chengdu Aircraft Industry (Group) Co., Ltd (Chengdu, Sichuan)"
+  university03: "Shaanxi Normal University (211 - Xi'an, Shaanxi)"
+  role01: "Major: Software Engineering"
+  role02: "Work: Software Engineering Technician"
+  role03: "Major: Software Engineering"
+  subtitle02: "Research Interests"
+  research_interests: "His research interests mainly include social computing, conceptual cognitive learning and data mining."
+  subtitle03: "Achievements"
+  subtitle03_01: "Projects"
+  page_source_code: "This Page (Page source code that you can see before)"
+  subtitle03_02: "Papers"
+  subtitle03_02_A: "Papers published during undergraduate studies"
+  subtitle03_02_B: "Papers published during master's studies"
+  subtitle03_03: "Others"
+  subtitle04: "Resources Download"
 
-    subtitle02: "Research Interests",
-    research_interests: "His research interests mainly include social computing, conceptual cognitive learning and data mining.",
-
-    subtitle03:" Achievements",
-    subtitle03_01: "Projects",
-    page_source_code: "This Page (Page source code that you can see before)",
-    subtitle03_02: "Papers",
-    subtitle03_02_A: "Papers published during undergraduate studies",
-    subtitle03_02_B: "Papers published during master's studies",
-    subtitle03_03: "Others",
-
-    subtitle04: "Resources Download"
-  },
-  zh: {
-    subtitle01: "个人经历",
-    languageButton: "Switch English / 切换英文",
-    university01:"南京航空航天大学（211 - 江苏南京）",
-    university02: "中国航空工业成飞集团（四川成都）",
-    university03: "陕西师范大学 (211 - 陕西西安)",
-    role01:"专业: 软件工程",
-    role02: "工作: 软件工程技术员",
-    role03: "专业: 软件工程",
-
-    subtitle02:"研究方向",
-    research_interests:"研究方向主要包括社会计算、概念认知学习和数据挖掘。",
-
-    subtitle03:"项目成果",
-    subtitle03_01: "项目",
-    page_source_code: "当前Page页面（页面源代码）",
-    subtitle03_02: "论文",
-    subtitle03_02_A: "本科期间发表的论文",
-    subtitle03_02_B: "硕士期间发表的论文",
-    subtitle03_03: "其他",
-    subtitle04: "资源下载"
-  }
-};
+zh:
+  subtitle01: "个人经历"
+  languageButton: "Switch English / 切换英文"
+  university01: "南京航空航天大学（211 - 江苏南京）"
+  university02: "中国航空工业成飞集团（四川成都）"
+  university03: "陕西师范大学 (211 - 陕西西安)"
+  role01: "专业: 软件工程"
+  role02: "工作: 软件工程技术员"
+  role03: "专业: 软件工程"
+  subtitle02: "研究方向"
+  research_interests: "研究方向主要包括社会计算、概念认知学习和数据挖掘。"
+  subtitle03: "项目成果"
+  subtitle03_01: "项目"
+  page_source_code: "当前Page页面（页面源代码）"
+  subtitle03_02: "论文"
+  subtitle03_02_A: "本科期间发表的论文"
+  subtitle03_02_B: "硕士期间发表的论文"
+  subtitle03_03: "其他"
+  subtitle04: "资源下载"

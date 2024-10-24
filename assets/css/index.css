@@ -412,3 +412,22 @@ aside_content .card-info .author-info__description {
     background-color: #252525;
     color: #ffffffbe;
 }
+
+.dark-mode #languageButton{
+    background-color: #252525;
+    color: #ffffffbe;
+    text-decoration: none;
+    border: 2px solid white;
+}
+
+
+/* 语言切换按钮 */
+#languageButton {
+    text-decoration: underline;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

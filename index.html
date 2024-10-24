@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
     <title>Sinocifeng の HomePage</title>
-    <meta name="description" content="这里是我的个人主页，欢迎来访！">
+    <meta name="description" content="This is Sinocifeng. Welcome！">
     <meta name="format-detection" content="telephone=no">   <!-- 页面中的数字可能并不是电话号码,这里用于控制在移动设备上如何处理电话号码,禁用自动识别和链接格式化,浏览器不会将其转换为可拨打的链接 -->
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
     <div id="body-wrap">
         <nav class="not_index_bg" id="nav" style="background-image:url(./assets/images/background.png)">
             <div id="page_site-info">
@@ -30,7 +31,7 @@
                     <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js"></script>
                     <script>
                         var typed = new Typed(".blogtitle", {
-                            strings: ['Welcome! This is Sinocifeng の HomePage'],
+                            strings: ['Welcome! This is Sinocifeng の HomePage', "欢迎！这里是Sinocifeng的个人Page"],
                             startDelay: 300,
                             typeSpeed: 100,
                             loop: true,
@@ -156,7 +157,7 @@
                         </div>
                     </div>
                     <div class="card-widget skillbox" >
-                        <div class="card-content">
+                        <div class="card-content" style="display: none">
                             <div class="skillbar">
                                 <div class="skillbar-title"
                                      style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 30%">
@@ -220,52 +221,53 @@
 <!--                        </div>-->
 
                         <div class="container">
-                            <h2> - Personal Experience</h2>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <h2 id="subtitle01" style="margin: 0;">Personal Experience</h2>
+                                <button id="languageButton" onclick="toggleLanguage()">Switch Language</button>
+                            </div>
+
                             <ul class="experience-list">
                                 <li class="experience-item">
                                     <div>
                                         <a class="year">2016 - 2020</a>&nbsp&nbsp&nbsp&nbsp
-                                        <a class="university">Nanjing University of Aeronautics and Astronautics</a>&nbsp&nbsp&nbsp&nbsp
-                                        <a class="role">Major: Software Engineering</a>
+                                        <a id="university01" class="university">Nanjing University of Aeronautics and Astronautics</a>&nbsp&nbsp&nbsp&nbsp
+                                        <a id="role01" class="role">Major: Software Engineering</a>
                                     </div>
-                                    <a class="description_text">Bachelor's Degree in Software Engineering</a>
                                 </li>
                                 <li class="experience-item">
                                     <div>
                                         <a class="year">2020 - 2021</a>&nbsp&nbsp&nbsp&nbsp
-                                        <a class="company">AVIC Chengdu Aircraft Industry (Group) Co., Ltd</a>&nbsp&nbsp
-                                        <a class="role">Work: Software Engineering Technician</a>
+                                        <a id="university02" class="company">AVIC Chengdu Aircraft Industry (Group) Co., Ltd</a>&nbsp&nbsp
+                                        <a id="role02" class="role">Work: Software Engineering Technician</a>
                                     </div>
-                                    <a class="description_text">Focused on the management of production information for J-20 aircraft.</a>
                                 </li>
                                 <li class="experience-item">
                                     <div>
-                                        <a class="year">2022 - Present</a>&nbsp&nbsp&nbsp&nbsp
-                                        <a class="university">Shaanxi Normal University</a>&nbsp&nbsp
-                                        <a class="role">Major: Software Engineering</a>
+                                        <a class="year">2022 - 2025</a>&nbsp&nbsp&nbsp&nbsp
+                                        <a id="university03" class="university">Shaanxi Normal University</a>&nbsp&nbsp
+                                        <a id="role03" class="role">Major: Software Engineering</a>
                                     </div>
-                                    <a class="description_text">Master's Degree in Software Engineering</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="container">
-                            <h2>Research Interests</h2>
+                            <h2 id="subtitle02">Research Interests</h2>
                             <div class="formal-text">
-                                <a class="description_text">
+                                <a id="research_interests" class="description_text">
                                     His research interests mainly include social computing, conceptual cognitive learning and data mining.
                                 </a>
                             </div>
                         </div>
                         <hr>
                         <div class="container">
-                            <h2>Achievements</h2>
+                            <h2 id="subtitle03">Achievements</h2>
                             <div>
-                                <h3>Projects</h3>
-                                <a class="custom-link" href="https://github.com/Sinocifeng/.github.io">myPage——当前所可以看到的项目源码</a>
+                                <h3 id="subtitle03_01">Projects</h3>
+                                <a id="page_source_code" class="custom-link" href="https://github.com/Sinocifeng/.github.io">This Page (Page source code that you can see before)</a>
                             </div>
                             <div>
-                                <h3>Papers</h3>
-                                <div class="section-title">Papers published during undergraduate studies</div>
+                                <h3 id="subtitle03_02">Papers</h3>
+                                <div id="subtitle03_02_A" class="section-title">Papers published during undergraduate studies</div>
                                 <ul>
                                     <li>
                                         <a class="custom-link" href="https://xueshu.baidu.com/usercenter/paper/show?paperid=1v7502p07h0102e0ur0u0rc04f337975&site=xueshu_se">
@@ -279,7 +281,7 @@
                                     </li>
                                 </ul>
 
-                                <div class="section-title">Papers published during master's studies</div>
+                                <div id="subtitle03_02_B" class="section-title">Papers published during master's studies</div>
                                 <ul>
                                     <li>
                                         <a class="custom-link" href="https://ieeexplore.ieee.org/abstract/document/10669628">
@@ -297,11 +299,11 @@
                                 </div>
                             <div>
                                 <div>
-                                    <h3>Others</h3>
+                                    <h3 id="subtitle03_03">Others</h3>
                                     <div>
 <!--                                        <h4>计算机</h4>-->
-                                        <a href="https://blog.csdn.net/Mu_Xiaoye/article/details/104299664">北京大学肖臻老师《区块链技术与应用》公开课系列笔记——目录导航页</a><br>
-                                        <a href="https://blog.csdn.net/Mu_Xiaoye/article/details/128070598">南京大学周志华《机器学习》课程系列笔记——目录导航页</a><br>
+                                        <a class="custom-link" href="https://blog.csdn.net/Mu_Xiaoye/article/details/104299664">北京大学肖臻老师《区块链技术与应用》公开课学习笔记</a><br>
+                                        <a class="custom-link" href="https://blog.csdn.net/Mu_Xiaoye/article/details/128070598">南京大学周志华《机器学习》课程学习笔记</a><br>
                                     </div>
 
 
@@ -312,10 +314,10 @@
                         <hr>
 
                         <div class="container">
-                            <h2>Resources Download</h2>
+                            <h2 id="subtitle04">Resources Download</h2>
                             <div class="tool">
-                                <li><a href="./downloadPage.html">PDF类型文本文件资源下载页面 </a></li>
-                                <li><a href="">工具下载页面(待更新) </a></li>
+                                <li><a href="./downloadPage.html"> 自学课程笔记下载页面(PDF) </a></li>
+                                <li><a href="">工具下载页面(待整理) </a></li>
                                 <!--                            <li><a href="https://www.ziyuanpro.com">资源PRO-ZiYuanPro.Com | 一个免费分享精品资源的网站</a></li>-->
                             </div>
                         </div>
@@ -327,7 +329,7 @@
         </main>
         <footer id="footer">
             <div id="footer-wrap">
-                <a class="description_text">CopyRight@2022-2025&copy;Sinocifeng.com</a>
+                <a class="description_text"> CopyRight @ 2022-2025    &copy;  Sinocifeng.com</a>
             </div>
         </footer>
     </div>
@@ -359,8 +361,11 @@
 
     <!-- MetingJS -->
     <script src="assets/js/meting.js"></script>
-    <!-- 复制内容 -->
     <script src="assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.14.0/js-yaml.min.js"></script>
+    <script src="assets/js/switch_language.js" defer></script>
+
+
 
 </body>
 

@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-family: Arial, sans-serif; /* 设置字体 */
+    text-align: center; /* 中心对齐 */
+    margin: 20px 0; /* 上下外边距 */
+}
+
+.container ul {
+    list-style: none; /* 去掉默认列表样式 */
+    padding: 0; /* 去掉内边距 */
+    margin: 0; /* 去掉外边距 */
+}
+
+.container li {
+    display: block; /* 使列表项水平排列 */
+    margin: 0; /* 去掉间隙 */
+    padding: 5px; /* 设置内边距 */
+}
+
+.container a {
+    text-decoration: none; /* 去掉下划线 */
+    color: #007BFF; /* 设置链接颜色 */
+    transition: color 0.3s; /* 设置颜色变化效果 */
+}
+
+.container a:hover {
+    color: #0056b3; /* 悬停时改变颜色 */
+}
+
+
+
+
+.layout_page{
+    display: flex; /* 使用flexbox布局 */
+    max-width: 1200px;
+    background: white;
+    margin: auto; /* 使布局居中 */
+}
+
+.content {
+    flex: 2;
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.directory {
+    flex: 1;
+    position: sticky; /* 使元素在视口中粘性定位 */
+    top: 50%; /* 距离顶部50% */
+    transform: translateY(-50%); /* 向上移动一半高度 */
+    max-width: 400px; /* 设置适当的宽度 */
+    /*border: 1px solid black;*/
+    background: white;
+    padding-left: 10px;
+    padding-right: 40px;
+
+    border-radius: 8px;
+    /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+
+#footer {
+    position: relative;
+    margin-top: 5px;
+    font-size : 12px;
+    background-attachment: local;
+    background-position: bottom;
+    background-size: cover;
+    width: 1200px;
+    background: #fff;
+    box-shadow: 0 4px 8px 6px rgba(7, 17, 27, .06);
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footer-wrap {
+    position: relative;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/*.layout_page {*/
+/*    display: flex; !* 使用flexbox布局 *!*/
+/*    justify-content: center; !* 水平居中 *!*/
+/*    align-items: center; !* 垂直居中 *!*/
+/*    height: 100vh; !* 高度为视口高度 *!*/
+/*    -webkit-animation: main 1s;*/
+/*    -moz-animation: main 1s;*/
+/*    -o-animation: main 1s;*/
+/*    -ms-animation: main 1s;*/
+/*    animation: main 1s;*/
+/*}*/
+
+
+/* 基础样式 */
+a {
+    text-decoration: none; /* 去掉下划线 */
+    color: black; /* 字体颜色 */
+    transition: color 0.3s, transform 0.3s; /* 添加过渡效果 */
+    display: inline-block; /* 使a标签为块级元素，便于下划线定位 */
+}
+
+/* 鼠标悬停效果 */
+a:hover {
+    color: #1abc9c; /* 悬停时的颜色 */
+    transform: scale(1.05); /* 放大效果 */
+}
+
+/* 点击效果 */
+a:active {
+    color: #e74c3c; /* 点击时的颜色 */
+    transform: scale(0.95); /* 缩小效果 */
+}
+
+/* 可选：添加下划线效果 */
+a::after {
+    content: ''; /* 添加伪元素 */
+    position: absolute; /* 绝对定位 */
+    left: 0; /* 左对齐 */
+    bottom: -2px; /* 距离文本底部的距离 */
+    height: 2px; /* 下划线的高度 */
+    width: 100%; /* 宽度为100% */
+    background: #3498db; /* 下划线颜色 */
+    transform: scaleX(0); /* 初始状态为0 */
+    transition: transform 0.3s; /* 添加过渡效果 */
+}
+
+/* 悬停时下划线出现 */
+a:hover::after {
+    transform: scaleX(1); /* 完全显示 */
+}
