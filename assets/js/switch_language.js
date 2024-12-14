@@ -5,28 +5,40 @@ function updateContent() {
         .then(response => response.text())
         .then(yamlText => {
             const data = jsyaml.load(yamlText);
+            const content = data[currentLanguage];  // 解构当前语言的数据
+            // 定义需要更新的元素及其对应的属性
+            const elementsToUpdate = {
+                    'subtitle01': 'subtitle01',
+                    'languageButton': 'languageButton',
+                    'university01': 'university01',
+                    'role01': 'role01',
+                    'university02': 'university02',
+                    'role02': 'role02',
+                    'university03': 'university03',
+                    'role03': 'role03',
+                    'subtitle02': 'subtitle02',
+                    'research_interests': 'research_interests',
+                    'subtitle03': 'subtitle03',
+                    'subtitle03_01': 'subtitle03_01',
+                    'page_source_code': 'page_source_code',
+                    'downloade_tool':'downloade_tool',
+                    'vegetableLeaves_tool': 'vegetableLeaves_tool',
+                    'my_blog': 'my_blog',
+                    'subtitle03_02': 'subtitle03_02',
+                    'subtitle03_02_A': 'subtitle03_02_A',
+                    'subtitle03_02_B': 'subtitle03_02_B',
+                    'subtitle03_03': 'subtitle03_03',
+                    'subtitle04': 'subtitle04'
+                };
 
-            document.getElementById('subtitle01').innerText = data[currentLanguage].subtitle01;
-            document.getElementById('languageButton').innerText = data[currentLanguage].languageButton;
-            document.getElementById('university01').innerText = data[currentLanguage].university01;
-            document.getElementById('role01').innerText = data[currentLanguage].role01;
-            document.getElementById('university02').innerText = data[currentLanguage].university02;
-            document.getElementById('role02').innerText = data[currentLanguage].role02;
-            document.getElementById('university03').innerText = data[currentLanguage].university03;
-            document.getElementById('role03').innerText = data[currentLanguage].role03;
+            // 批量更新DOM
+            Object.keys(elementsToUpdate).forEach(elementId => {
+                   const field = elementsToUpdate[elementId];
+                   if (content[field] !== undefined) {
+                           document.getElementById(elementId).innerText = content[field];
+                   }
+            });
 
-            document.getElementById('subtitle02').innerText = data[currentLanguage].subtitle02;
-            document.getElementById('research_interests').innerText = data[currentLanguage].research_interests;
-
-            document.getElementById('subtitle03').innerText = data[currentLanguage].subtitle03;
-            document.getElementById('subtitle03_01').innerText = data[currentLanguage].subtitle03_01;
-            document.getElementById('page_source_code').innerText = data[currentLanguage].page_source_code;
-            document.getElementById('subtitle03_02').innerText = data[currentLanguage].subtitle03_02;
-            document.getElementById('subtitle03_02_A').innerText = data[currentLanguage].subtitle03_02_A;
-            document.getElementById('subtitle03_02_B').innerText = data[currentLanguage].subtitle03_02_B;
-            document.getElementById('subtitle03_03').innerText = data[currentLanguage].subtitle03_03;
-
-            document.getElementById('subtitle04').innerText = data[currentLanguage].subtitle04;
         });
 }
 
