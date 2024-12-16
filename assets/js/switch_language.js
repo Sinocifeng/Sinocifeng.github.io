@@ -20,11 +20,15 @@ function updateContent() {
 
             // 批量更新DOM
             Object.keys(elementsToUpdate).forEach(elementId => {
-                   const field = elementsToUpdate[elementId];
-                   if (content[field] !== undefined) {
-                           document.getElementById(elementId).innerText = content[field];
-                           console.log(content[field])
-                   }
+                const field = elementsToUpdate[elementId];
+                // 先检查元素是否存在
+                const element = document.getElementById(elementId);
+                if (element && content[field] !== undefined) {
+                    element.innerText = content[field];
+                    console.log(content[field]);
+                } else {
+                    console.log(`元素 ${elementId} 不存在或内容为空，跳过更新。`);
+                }
             });
 
         });
