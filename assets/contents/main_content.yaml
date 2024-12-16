@@ -36,7 +36,7 @@ zh:
   subtitle03_01: "项目"
   page_source_code: "当前Page页面（当前页面源代码）"
   downloade_tool: "The Downloader (用 Java 编写的下载器，使用多线程下载文件)"
-  vegetableLeaves_tool: "(用 python 编写的一个图形化excel数据统计工具，用于业务数据汇总)"
+  vegetableLeaves_tool: "The VegetableLeaves(用 python 编写的一个图形化excel数据统计工具，用于业务数据汇总)"
   my_blog: "My Blog(一个基于springboot2.0的博客项目，曾从0开发到部署至阿里云服务器，并可以通过互联网访问)"
   subtitle03_02: "论文"
   subtitle03_02_A: "本科期间发表的论文"
