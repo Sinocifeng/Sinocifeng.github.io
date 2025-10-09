@@ -59,7 +59,6 @@ strong{
 }
 #body-wrap {
     position: relative;
-    display: box;
     display: flex;
     box-flex: 1;
     flex: 1 auto;
@@ -420,6 +419,12 @@ aside_content .card-info .author-info__description {
     border: 2px solid white;
 }
 
+/*.status-bar-content .status-label*/
+.dark-mode .status-bar .status-label{
+    background-color: #252525;
+    color: #ffffffbe;
+}
+
 
 /* 语言切换按钮 */
 #languageButton {
@@ -438,7 +443,7 @@ aside_content .card-info .author-info__description {
     width: 100%;
     height: 50px;
     order: -1;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     border-bottom: 1px solid #e0e0e0;
     padding: 14px 0;
     font-size: 15px;        /* 主字号略升 */
@@ -467,7 +472,7 @@ aside_content .card-info .author-info__description {
     transition: background .25s, color .25s;
 }
 
-/* 4. 鼠标悬停高亮更明显 */
+/*鼠标悬停高亮更明显 */
 .status-label:hover {
     background: #f2f7ff;
     color: #41b349;
