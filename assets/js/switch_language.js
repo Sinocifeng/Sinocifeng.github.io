@@ -8,8 +8,8 @@ function updateContent() {
             const content = data[currentLanguage];  // 解构当前语言的数据
             // 定义需要更新的元素及其对应的属性
             const keys = [
-                'subtitle01', 'languageButton', 'university01', 'role01', 'university02',
-                'role02', 'university03', 'role03', 'subtitle02', 'research_interests',
+                'office', 'loc_1', 'loc_2', 'loc_3', 'loc_4', 'subtitle01', 'languageButton', 'university01', 'role01', 'university02',
+                'role02', 'university03', 'role03', 'university04', 'role04', 'subtitle02', 'research_interests',
                 'subtitle03', 'subtitle03_01', 'page_source_code', 'downloade_tool',
                 'vegetableLeaves_tool', 'my_blog', 'subtitle03_02', 'subtitle03_02_A',
                 'subtitle03_02_B', 'subtitle03_03', 'subtitle04'
@@ -25,7 +25,7 @@ function updateContent() {
                 const element = document.getElementById(elementId);
                 if (element && content[field] !== undefined) {
                     element.innerText = content[field];
-                    console.log(content[field]);
+                    // console.log(content[field]);
                 } else {
                     console.log(`元素 ${elementId} 不存在或内容为空，跳过更新。`);
                 }

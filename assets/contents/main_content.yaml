@@ -1,15 +1,21 @@
 en:
-  subtitle01: "Personal Experience"
+  office: Rm.K915, Keji Building, WuZhou University, Wu'zhou, 543003, China
+  subtitle01: &s01_en "Personal Experience"
+  loc_1: *s01_en
   languageButton: "切换中文 / Switch Chinese"
-  university01: "Nanjing University of Aeronautics and Astronautics (211 - Nanjing, Jiangsu)"
+  university01: "Nanjing University of Aeronautics and Astronautics (Nanjing, Jiangsu)"
   university02: "AVIC Chengdu Aircraft Industry (Group) Co., Ltd (Chengdu, Sichuan)"
-  university03: "Shaanxi Normal University (211 - Xi'an, Shaanxi)"
+  university03: "Shaanxi Normal University ( Xi'an, Shaanxi)"
+  university04: "WuZhou University"
   role01: "Major: Software Engineering"
   role02: "Work: Software Engineering Technician"
   role03: "Major: Software Engineering"
-  subtitle02: "Research Interests"
+  role04: "Work: Artificial Intelligence Teacher"
+  subtitle02: &s02_en "Research Interests"
+  loc_2: *s02_en
   research_interests: "His research interests mainly include social computing, conceptual cognitive learning and data mining."
-  subtitle03: "Achievements"
+  subtitle03: &s03_en "Achievements"
+  loc_3: *s03_en
   subtitle03_01: "Projects"
   page_source_code: "This Page (Page source code that you can see before)"
   downloade_tool: "The Downloader (A downloader programmed in Java that uses multi-threading to download files)"
@@ -19,20 +25,27 @@ en:
   subtitle03_02_A: "Papers published during undergraduate studies"
   subtitle03_02_B: "Papers published during master's studies"
   subtitle03_03: "Others"
-  subtitle04: "Resources Download"
+  subtitle04: &s04_en "Resources Download"
+  loc_4: *s04_en
 
 zh:
-  subtitle01: "个人经历"
+  office: 科技楼 K915 室
+  subtitle01: &s01_zh "个人经历"
+  loc_1: *s01_zh
   languageButton: "Switch English / 切换英文"
-  university01: "南京航空航天大学（211 - 江苏南京）"
+  university01: "南京航空航天大学（江苏南京）"
   university02: "中国航空工业成飞集团（四川成都）"
-  university03: "陕西师范大学 (211 - 陕西西安)"
+  university03: "陕西师范大学 (陕西西安)"
+  university04: "梧州学院 (广西梧州)"
   role01: "专业: 软件工程"
   role02: "工作: 软件工程技术员"
   role03: "专业: 软件工程"
-  subtitle02: "研究方向"
+  role04: "工作: 人工智能教师"
+  subtitle02: &s02_zh "研究方向"
+  loc_2: *s02_zh
   research_interests: "研究方向主要包括社会计算、概念认知学习和数据挖掘。"
-  subtitle03: "项目成果"
+  subtitle03: &s03_zh "项目成果"
+  loc_3: *s03_zh
   subtitle03_01: "项目"
   page_source_code: "当前Page页面（当前页面源代码）"
   downloade_tool: "The Downloader (用 Java 编写的下载器，使用多线程下载文件)"
@@ -42,4 +55,5 @@ zh:
   subtitle03_02_A: "本科期间发表的论文"
   subtitle03_02_B: "硕士期间发表的论文"
   subtitle03_03: "其他"
-  subtitle04: "资源下载"
+  subtitle04: &s04_zh "资源下载"
+  loc_4: *s04_zh

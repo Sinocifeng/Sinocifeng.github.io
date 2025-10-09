@@ -5,13 +5,15 @@ function email() {
     swal({
         title: "E-mail",
         text: "1459736568@qq.com",
-        buttons: ["Copy", true],
-    })
-        .then((OK) => {
-            if (OK) {
+        showCancelButton: true,
+        buttons: {
+            cancel: "OK",
+            confirm: "Copy"
             }
-            else {
-                copy("taozi.n@qq.com");
+        })
+        .then((res) => {
+            if (res) {
+                copy("1459736568@qq.com");
             }
         });
 }
