@@ -1,4 +1,4 @@
-let currentLanguage = 'zh';
+let currentLanguage = 'en';
 function updateContent() {
 
     fetch('assets/contents/main_content.yaml')
