@@ -12,7 +12,7 @@ en:
   subtitle02: &s02_en "Information"
   join_us: I am looking for motivated students with solid background in mathematics and programming. If you are interested in doing research with me, please feel free to contact me via email.
   loc_2: *s02_en
-  research_interests: "Currently, he is the teacher at the School of Electronic Information and Artificial Intelligence, Wuzhou University. His research interests include data mining, conceptual cognitive learning, and artificial intelligence. He have been invited to serve as a reviewer for ACM-WWW (CCF-B) and IEEE-DSCI. He have published 4 papers in journals and conferences such as IEEE TCSS、IEEE-UIC、ICAIS, and have applied for 1 invention patent."
+  research_interests: "Currently, he is the teacher at the School of Electronic Information and Artificial Intelligence, Wuzhou University. His research interests include data mining, conceptual cognitive learning, and artificial intelligence. He have been invited to serve as a reviewer for WWWj (CCF-B) and IEEE-DSCI. He have published 4 papers in journals and conferences such as IEEE TCSS、IEEE-UIC、ICAIS, and have applied for 1 invention patent."
   subtitle03: &s03_en "Achievements"
   loc_3: *s03_en
   subtitle03_01: "Papers"
@@ -35,7 +35,7 @@ zh:
   subtitle02: &s02_zh "个人信息"
   join_us: "欢迎加入我的研究项目，如果你有想法请随时通过电子邮件与我联系。"
   loc_2: *s02_zh
-  research_interests: "现为梧州学院电子信息与人工智能学院教师，研究兴趣包括数据挖掘、概念认知学习和人工智能。受邀担任 ACM-WWW(CCF-B 类)和 IEEE-DSCI 审稿人，在 IEEE TCSS、IEEE-UIC、ICAIS等期刊、会议上发表论文 4 篇，申请发明专利 1 项。"
+  research_interests: "现为梧州学院电子信息与人工智能学院教师，研究兴趣包括数据挖掘、概念认知学习和人工智能。受邀担任 WWWj(CCF-B 类)和 IEEE-DSCI 审稿人，在 IEEE TCSS、IEEE-UIC、ICAIS等期刊、会议上发表论文 4 篇，申请发明专利 1 项。"
   subtitle03: &s03_zh "项目成果"
   loc_3: *s03_zh
   subtitle03_01: "论文"
