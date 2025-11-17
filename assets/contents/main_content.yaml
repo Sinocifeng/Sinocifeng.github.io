@@ -12,7 +12,7 @@ en:
   subtitle02: &s02_en "Information"
   join_us: I am looking for motivated students with solid background in mathematics and programming. If you are interested in doing research with me, please feel free to contact me via email.
   loc_2: *s02_en
-  research_interests: "Currently, he is the teacher at the School of Electronic Information and Artificial Intelligence, Wuzhou University. His research interests include data mining, conceptual cognitive learning, and artificial intelligence. He have been invited to serve as a reviewer for WWWj (CCF-B) and IEEE-DSCI. He have published 4 papers in journals and conferences such as IEEE TCSS、IEEE-UIC、ICAIS, and have applied for 1 invention patent."
+  research_interests: "Currently, he is the teacher at the School of Electronic Information and Artificial Intelligence, Wuzhou University. His research interests include data mining, concept-cognitive learning, and artificial intelligence. He have been invited to serve as a reviewer for WWWj (CCF-B) and IEEE-DSCI. He have published 4 papers in journals and conferences such as IEEE TCSS、IEEE-UIC、ICAIS, and have applied for 1 invention patent."
   subtitle03: &s03_en "Achievements"
   loc_3: *s03_en
   subtitle03_01: "Papers"
