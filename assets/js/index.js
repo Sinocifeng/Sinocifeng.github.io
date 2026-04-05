@@ -1,69 +1,94 @@
-<!-- 邮箱 -->
+// 邮箱
 
 // 显示邮箱
 function email() {
-    swal({
+    Swal.fire({
         title: "E-mail",
         text: "1459736568@qq.com",
         showCancelButton: true,
-        buttons: {
-            cancel: "OK",
-            confirm: "Copy"
-            }
-        })
-        .then((res) => {
-            if (res) {
-                copy("1459736568@qq.com");
-            }
-        });
+        cancelButtonText: "OK",
+        confirmButtonText: "Copy"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            copy("1459736568@qq.com");
+        }
+    });
 }
 // 复制邮箱内容到粘贴板
 function copy(data) {
-    let input = document.createElement("input");
-    input.setAttribute("readonly", "readonly");
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(data).then(() => {
+            Swal.fire("Copy success!");
+        }).catch(err => {
+            console.error('复制失败:', err);
+            fallbackCopyTextToClipboard(data);
+        });
+    } else {
+        fallbackCopyTextToClipboard(data);
+    }
+}
+function fallbackCopyTextToClipboard(data) {
+    let input = document.createElement("textarea");
     input.value = data;
+    input.style.position = "fixed";
+    input.style.left = "-9999px";
     document.body.appendChild(input);
     input.select();
-    document.execCommand("Copy");
+    try {
+        document.execCommand("copy");
+        Swal.fire("Copy success!");
+    } catch (err) {
+        console.error('复制失败:', err);
+        Swal.fire("Copy failed, please copy manually");
+    }
     document.body.removeChild(input);
-    swal("Copy success!");
 }
 
 
-<!-- 当前URL -->
+// 当前URL
 // 弹窗 - 显示当前URL
 function page_url() {
-    swal({
+    Swal.fire({
         title: "URL",
         text: url,
-    })
+    });
 }
 
 
-<!-- 问候 -->
+// 问候
 function greetUser() {
     const now = new Date();
     const hour = now.getHours();
 
-    if (hour > 0 && hour < 6) {
-        swal({ title: "凌晨了!", text: "注意休息~", icon: "info" });
+    if (hour >= 0 && hour < 6) {
+        Swal.fire({
+            title: "凌晨了!",
+            text: "注意休息~",
+            icon: "info"
+        });
     } else if (hour >= 6 && hour < 9) {
-        swal({ title: "早上好!", text: "Good morning", icon: "info" });
+        Swal.fire({
+            title: "早上好!",
+            text: "Good morning",
+            icon: "info"
+        });
     } else if (hour >= 20 && hour < 24) {
-        swal({
+        Swal.fire({
             title: "晚上好!",
             text: "开启夜间模式可以让页面不那么刺眼哟~",
             icon: "info",
-            buttons: ["夜间模式", true],
-        }).then((OK) => {
-            if (OK) {
-                // 用户点击了夜间模式的按钮，这里可以添加相关代码
-            } else {
-                dark(); // 假设这里是切换到夜间模式的函数
+            showCancelButton: true,
+            cancelButtonText: "稍后再说",
+            confirmButtonText: "开启夜间模式"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                dark();
             }
         });
     }
 }
+
+
 // 在页面加载时调用 greetUser 函数，自动执行
 document.addEventListener("DOMContentLoaded", greetUser);
 
@@ -79,6 +104,11 @@ function dark() {
 }
 
 (function ($) {
+        if (!$) {
+        console.warn('jQuery is not loaded, snow effect disabled');
+        return;
+    }
+
     $.fn.snow = function (options) {
         var $flake = $('<div id="snowbox" />').css({ 'position': 'absolute', 'z-index': '9999', 'top': '-50px' }).html('&#10052;'),
             documentHeight = $(document).height(),
@@ -139,7 +169,7 @@ document.addEventListener('visibilitychange', function () {
 });
 
 
-<!-- 展示时间，每秒一次 -->
+// 展示时间，每秒一次
 BirthDay = new Date("2022-10-11T18:00:00");
 function show_date_time() {
     today=new Date();

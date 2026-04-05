@@ -1,0 +1,63 @@
+papers:
+  - title: "Fairness-Aware Maximal Cliques Identification in Attributed Social Networks With Concept-Cognitive Learning."
+    url: "https://ieeexplore.ieee.org/abstract/document/10669628"
+    authors:
+      - name: "M. Tao"
+        highlight: true
+      - name: "F. Hao"
+      - name: "L. Wei"
+      - name: "H. Zhi"
+      - name: "S. O. Kuznetsov"
+      - name: "G. Min"
+    journal: "IEEE Transactions on Computational Social Systems (2024)"
+    note: "IEEE-Transactions、SCI二区、CCF-C、社会计算领域顶刊"
+
+  - title: "Discovering Fairness-aware Structures from Social Networks Based on Concept-cognitive Learning"
+    url: "https://ieeexplore.ieee.org/abstract/document/10189797"
+    authors:
+      - name: "M. Tao"
+        highlight: true
+      - name: "F. Hao"
+      - name: "Y. Zhu"
+      - name: "D. -S. Park"
+      - name: "X. Xu"
+    journal: "IEEE Ubiquitous Intelligence & Computing (2022)"
+    note: "CCF-C、EI"
+
+  - title: "Paper Recommend Based on LDA and PageRank"
+    url: "https://link.springer.com/chapter/10.1007/978-981-15-8101-4_51"
+    authors:
+      - name: "Tao, M."
+        highlight: true
+      - name: "Yang, X."
+      - name: "Gu, G."
+      - name: "Li, B."
+    journal: "Artificial Intelligence and Security. ICAIS (2020)"
+
+  - title: "基于MIMIC-Ⅲ数据库对ICU患者结局预测的研究"
+    url: "https://xueshu.baidu.com/usercenter/paper/show?paperid=1v7502p07h0102e0ur0u0rc04f337975&site=xueshu_se"
+    authors:
+      - name: "Huang, P."
+      - name: "Lian, Z."
+      - name: "Tao, M."
+        highlight: true
+      - name: "Du, J."
+      - name: "Zhao, Y."
+    journal: "中国医疗设备 (2019)"
+
+projects:
+  - title: "基于概念认知学习的西江航运多维网络关键结构识别方法研究."
+    info: "校青年项目 （2026.1-2028.12）.（主持）"
+
+patents:
+  - title: "一种社交网络公平结构挖掘方法"
+    url: "https://xueshu.baidu.com/ndscholar/browse/detail?paperid=195k02k0jk2502p0cj2k0vu0yc044076"
+    authors:
+      - name: "F. Hao"
+      - name: "M. Tao"
+        highlight: true
+      - name: "J. Chen"
+      - name: "L. Guo"
+      - name: "W. Yu"
+    patent_no: "CN202211204834.5. (2022 China)"
+    status: "With public"

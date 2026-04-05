@@ -1,35 +1,43 @@
 let currentLanguage = 'en';
-function updateContent() {
+let languageData = null;
 
-    fetch('assets/contents/main_content.yaml')
-        .then(response => response.text())
-        .then(yamlText => {
-            const data = jsyaml.load(yamlText);
-            const content = data[currentLanguage];  // 解构当前语言的数据
-            // 定义需要更新的元素及其对应的属性
-            const keys = [
-                'office', 'loc_1', 'loc_2', 'loc_3', 'loc_4', 'subtitle01', 'languageButton', 'university01', 'role01',
-                'university03', 'role03', 'university04', 'role04', 'subtitle02', 'research_interests', 'join_us',
-                'subtitle03_01', 'subtitle03_02', 'subtitle03_03', 'subtitle04'
-            ];
+async function loadLanguageData() {
+    if (languageData) {
+        return languageData;
+    }
 
-            const elementsToUpdate = Object.fromEntries(keys.map(key => [key, key]));
+    try {
+        const response = await fetch('assets/contents/main_content.yaml');
+        const yamlText = await response.text();
+        languageData = jsyaml.load(yamlText);
+        return languageData;
+    } catch (error) {
+        console.error('加载语言文件失败:', error);
+        return null;
+    }
+}
 
+async function updateContent() {
+    const data = await loadLanguageData();
+    if (!data || !data[currentLanguage]) {
+        console.error('语言数据不存在');
+        return;
+    }
 
-            // 批量更新DOM
-            Object.keys(elementsToUpdate).forEach(elementId => {
-                const field = elementsToUpdate[elementId];
-                // 先检查元素是否存在
-                const element = document.getElementById(elementId);
-                if (element && content[field] !== undefined) {
-                    element.innerText = content[field];
-                    // console.log(content[field]);
-                } else {
-                    console.log(`元素 ${elementId} 不存在或内容为空，跳过更新。`);
-                }
-            });
+    const content = data[currentLanguage];
 
-        });
+    const keys = [
+        'office', 'loc_1', 'loc_2', 'loc_3', 'loc_4', 'subtitle01', 'languageButton', 'university01', 'role01',
+        'university03', 'role03', 'university04', 'role04', 'subtitle02', 'research_interests', 'join_us',
+        'subtitle03_01', 'subtitle03_02', 'subtitle03_03', 'subtitle04'
+    ];
+
+    keys.forEach(key => {
+        const element = document.getElementById(key);
+        if (element && content[key] !== undefined) {
+            element.innerText = content[key];
+        }
+    });
 }
 
 function toggleLanguage() {
@@ -37,5 +45,8 @@ function toggleLanguage() {
     updateContent();
 }
 
-// 初始内容加载
-updateContent();
+document.addEventListener('DOMContentLoaded', () => {
+    loadLanguageData().then(() => {
+        updateContent();
+    });
+});

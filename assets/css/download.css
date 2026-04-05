@@ -103,19 +103,6 @@ h1, h2 {
     text-align: center;
 }
 
-/*.layout_page {*/
-/*    display: flex; !* 使用flexbox布局 *!*/
-/*    justify-content: center; !* 水平居中 *!*/
-/*    align-items: center; !* 垂直居中 *!*/
-/*    height: 100vh; !* 高度为视口高度 *!*/
-/*    -webkit-animation: main 1s;*/
-/*    -moz-animation: main 1s;*/
-/*    -o-animation: main 1s;*/
-/*    -ms-animation: main 1s;*/
-/*    animation: main 1s;*/
-/*}*/
-
-
 /* 基础样式 */
 a {
     text-decoration: none; /* 去掉下划线 */

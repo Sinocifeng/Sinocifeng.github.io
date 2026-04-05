@@ -202,8 +202,16 @@ h1 {
     color: rgba(0, 0, 0, 0.5);
 }
 
+.tool {
+    padding: 0;
+    padding-left: 15px;  /* 调整这个值来控制左边距 */
+    margin: 5px 0;
+    list-style: none;
+}
+
+
 .tool a {
-    color: #FF0066;
+    color: #9900FF;
 }
 
 .is-center {
@@ -334,12 +342,13 @@ aside_content .card-info .author-info__description {
 }
 
 ::-webkit-scrollbar {
-    width: 2px;
-    height: 2px
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right, #00ff8085 0%, #00ff9085 100%); width: 85%
+    background: linear-gradient(to right, #00ff8085 0%, #00ff9085 100%);
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -489,3 +498,66 @@ aside_content .card-info .author-info__description {
 }
 
 
+/* 文本颜色工具类 */
+.text-orange {
+    color: orange;
+}
+
+.text-small {
+    font-size: 10px;
+}
+
+/* 个人经历布局 */
+.experience-year,
+.experience-university,
+.experience-role {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.experience-university {
+    margin-left: 10px;
+}
+
+.experience-role {
+    margin-left: 10px;
+}
+
+.text-black {
+    color: black;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+    .experience-year,
+    .experience-university,
+    .experience-role {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* 论文作者和期刊名称样式 */
+.paper-author,
+.paper-journal {
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+/* 深色模式适配 */
+.dark-mode #join_us {
+    color: #ffffffbe;
+}
+
+/* 项目信息样式 */
+.project-info {
+    margin-left: 8px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.dark-mode .paper-author,
+.dark-mode .paper-journal,
+.dark-mode .project-inf{
+    color: #ffffffbe;
+}

@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
     <title>Sinocifeng の HomePage</title>
+    <meta name="keywords" content="Sinocifeng, Personal Page, Software Engineering, AI Teacher">
+    <meta name="author" content="Sinocifeng">
     <meta name="description" content="This is Sinocifeng. Welcome！">
     <meta name="format-detection" content="telephone=no">   <!-- 页面中的数字可能并不是电话号码,这里用于控制在移动设备上如何处理电话号码,禁用自动识别和链接格式化,浏览器不会将其转换为可拨打的链接 -->
+    <link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="./assets/css/papers_div.css">
     <link rel="stylesheet" href="./assets/css/personal_info_div.css"> <!-- 引入外部CSS文件 -->
-    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- SweetAlert CSS+JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert@2/dist/sweetalert.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert@2/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
-    <script type="text/javascript">
-        if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
-            alert('不建议使用IE浏览器，建议切换为Chrome浏览器~');
+
+
+    <script type="text/javascript">    if (!!window.ActiveXObject || "ActiveXObject" in window) {
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    title: "浏览器提示",
+                    text: "不建议使用IE浏览器，建议切换为Chrome浏览器以获得更好的体验~",
+                    icon: "warning",
+                    confirmButtonText: "知道了"
+                });
+            });
         }
     </script>
 </head>
@@ -36,7 +45,8 @@
             <div id="page_site-info">
                 <div id="site-title">
                     <span class="blogtitle"></span>
-                    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
                     <script>
                         var typed = new Typed(".blogtitle", {
                             strings: ['Welcome! This is Sinocifeng の HomePage', "欢迎！这里是Sinocifeng的个人Page"],
@@ -77,8 +87,8 @@
                                 <img class="avatar-img"
                                     src="./assets/Fig.jpg"
                                     alt="avatar">
-                                <div class="author-info__name"><font color="orange"><b>Sinocifeng</b></font></div>
-                                <div class="author-info__name"><font color="orange">Contact</font></div>
+                                <div class="author-info__name text-orange"><b>Sinocifeng</b></div>
+                                <div class="author-info__name text-orange">Contact</div>
                             </div>
                             <div class="card-info-social-icons is-center">
 <!--                                <a href="#" class="social-icon" target="_blank" style="display: none;"><svg t="1653121638226" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10961" width="26" height="26"><path d="M512 85.333333c235.648 0 426.666667 191.018667 426.666667 426.666667s-191.018667 426.666667-426.666667 426.666667S85.333333 747.648 85.333333 512 276.352 85.333333 512 85.333333z m123.605333 175.786667a17.408 17.408 0 0 0-24.576-0.042667l-66.133333 66.261334h-64.256l-66.133333-66.261334-2.730667-2.218666a17.450667 17.450667 0 0 0-21.845333 26.88l41.514666 41.6H341.973333l-6.4 0.213333A86.357333 86.357333 0 0 0 256 413.482667v215.637333l0.256 6.4a86.314667 86.314667 0 0 0 85.76 79.786667h12.8l0.298667 4.138666a28.330667 28.330667 0 0 0 56.32-4.181333h201.173333l0.298667 4.181333a28.330667 28.330667 0 0 0 56.32-4.181333h12.8l6.4-0.256A86.357333 86.357333 0 0 0 768 629.12V413.482667l-0.256-6.4a86.314667 86.314667 0 0 0-85.76-79.786667h-87.893333l41.514666-41.6 2.218667-2.688a17.493333 17.493333 0 0 0-2.218667-21.930667z m40.448 117.589333c17.365333 0 31.445333 14.208 31.573334 31.573334l1.621333 221.696-0.256 4.266666a31.658667 31.658667 0 0 1-31.274667 27.349334H346.282667l-4.266667-0.298667a31.829333 31.829333 0 0 1-27.306667-31.317333l-1.621333-221.696 0.256-4.266667c2.048-15.36 15.36-27.306667 31.317333-27.306667z m-167.082666 182.058667c-11.306667 12.245333-12.586667 28.16-30.549334 28.16-11.306667 0-20.906667-15.018667-20.906666-15.018667l-1.664-1.792a10.794667 10.794667 0 0 0-7.04-2.56 9.941333 9.941333 0 0 0-9.941334 10.197334c0 1.792 0.426667 3.413333 1.194667 4.864l0.213333 0.426666c1.834667 3.242667 14.634667 24.490667 39.936 24.490667 15.018667 0 26.026667-10.069333 28.288-12.288l0.426667-0.426667 0.426667 0.426667c2.304 2.218667 13.312 12.288 28.330666 12.288 27.434667 0 40.149333-24.917333 40.106667-24.96l0.938667-2.261333 0.298666-2.56a9.941333 9.941333 0 0 0-9.941333-10.197334c-3.626667 0-6.826667 1.706667-8.704 4.352l-0.341333 0.512c-1.834667 2.645333-10.496 14.506667-20.522667 14.506667-16.213333 0-18.858667-12.885333-27.477333-24.405333z m59.733333-109.738667l-7.936 40.362667L668.586667 512l7.978666-40.32-107.818666-20.650667z m-113.450667 0l-107.818666 20.650667 7.978666 40.32 107.818667-20.608-7.978667-40.362667z" fill="#23ADE5" p-id="10962"></path></svg></a>-->
@@ -97,7 +107,7 @@
                         <div class="card-content">
                             <div class="item-headline">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                <span style="font-size: 10px">Office</span>
+                                <span class="text-small">Office</span>
                             </div>
                             <div>
                                 <p id="office">Rm.K915, Keji Building, WuZhou University, Wu'zhou, 543003, China</p>
@@ -108,7 +118,7 @@
                         <div class="card-content">
                             <div class="item-headline">
                                 <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                                <span style="font-size: 10px">A word</span>
+                                <span class="text-small">A word</span>
                             </div>
                             <div id="A_word">We are going through a war that no one else knows!</div>
                         </div>
@@ -117,7 +127,7 @@
                         <div class="card-content">
                             <div class="item-headline">
                                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                <span style="font-size: 10px">Recommend</span>
+                                <span class="text-small">Recommend</span>
                             </div>
                             <div id="recommend">
                                 <li><a style="color: #ffafab; text-decoration:none;">关于文件资源下载请到[My Resources]中进行下载</a></li>
@@ -129,7 +139,7 @@
                         <div class="card-content">
                             <div class="item-headline">
                                 <i class="fa fa-link" aria-hidden="true"></i>
-                                <span style="font-size: 10px">My Personal Blog Website</span>
+                                <span class="text-small">My Personal Blog Website</span>
                             </div>
                             <div id="myBlog">
                                 <a target="_blank" rel="noopener noreferrer">wait linked! Please wait for the Blog platform to go online. </a>
@@ -140,7 +150,7 @@
                         <div class="card-content">
                             <div class="item-headline">
                                 <i class="fa fa-line-chart" aria-hidden="true"></i>
-                                <span style="font-size: 10px">Page Information</span>
+                                <span class="text-small">Page Information</span>
                             </div>
                             <div class="webinfo">
                                 <div class="webinfo-item">
@@ -250,23 +260,24 @@
                             <ul class="experience-list">
                                 <li class="experience-item">
                                     <div>
-                                        <a class="year">2016 - 2020</a>&nbsp&nbsp&nbsp&nbsp
-                                        <a id="university01" class="university">Nanjing University of Aeronautics and Astronautics</a>&nbsp&nbsp&nbsp&nbsp
-                                        <a id="role01" class="role">Major: Software Engineering</a>
+                                        <span class="experience-year">2016 - 2020</span>
+                                        <span class="experience-university" id="university01">Nanjing University of Aeronautics and Astronautics</span>
+                                        <span class="experience-role" id="role01">Major: Software Engineering</span>
+
                                     </div>
                                 </li>
                                 <li class="experience-item">
                                     <div>
-                                        <a class="year">2022 - 2025</a>&nbsp&nbsp&nbsp&nbsp
-                                        <a id="university03" class="university">Shaanxi Normal University</a>&nbsp&nbsp
-                                        <a id="role03" class="role">Major: Software Engineering</a>
+                                        <span class="experience-year">2022 - 2025</span>
+                                        <span class="experience-university" id="university03">Shaanxi Normal University</span>
+                                        <span class="experience-role" id="role03">Major: Software Engineering</span>
                                     </div>
                                 </li>
                                 <li class="experience-item">
                                     <div>
-                                        <a class="year">2025 - now </a>&nbsp&nbsp&nbsp&nbsp
-                                        <a id="university04" class="university">WuZhou University</a>&nbsp&nbsp
-                                        <a id="role04" class="role">Work: Artificial Intellgence Teacher</a>
+                                        <span class="experience-year">2025 -  now </span>
+                                        <span class="experience-university" id="university04">WuZhou University</span>
+                                        <span class="experience-role" id="role04">Work: Artificial Intelligence Teacher</span>
                                     </div>
                                 </li>
                             </ul>
@@ -280,60 +291,57 @@
                                 </a>
                                 </br></br>
                                 <span class="label label-success">Join Us - Student Openings</span>
-                                <p id="join_us" class="lead; font-size:18px;"><font color="black"><b>I am looking for motivated students with solid background in mathematics and programming. If you are interested in doing research with me, please feel free to contact me via email.</b></font>
-                                </p>
+                                <p id="join_us" ><b>I am looking for motivated students with solid background in mathematics and programming. If you are interested in doing research with me, please feel free to contact me via email.</b></p>
+
                             </div>
                         </div>
                         <hr>
                         <!-- 项目成果 -->
                         <div class="container">
-<!--                            <h2 id="subtitle03">Achievements</h2>-->
-<!--                            <div>-->
-<!--                                <h3 id="subtitle03_01">Projects</h3>-->
-<!--                                <ul>-->
-<!--                                    <li><a id="page_source_code" class="custom-link" href="https://github.com/Sinocifeng/.github.io">This Page (Page source code that you can see before)</a></li>-->
-<!--                                    <li><a id="downloade_tool" class="custom-link" href="https://github.com/Sinocifeng/my-kits/tree/master/Downloader">The Downloader (Programming in Java, using multi-threaded mode to download files)</a></li>-->
-<!--                                    <li><a id="vegetableLeaves_tool" class="custom-link" href="https://github.com/Sinocifeng/my-kits/tree/master/VegetableLeaves">The VegetableLeaves (A graphical Excel data statistics tool written in Python for business data aggregation)</a></li>-->
-<!--                                    <li><a id="my_blog" class="custom-link" href="https://github.com/Sinocifeng/myblog/tree/master">My Blog (A blog project based on springboot2.0, which was developed from scratch and deployed to Alibaba Cloud Server and can be accessed through the Internet)</a></li>-->
-<!--                                </ul>-->
-<!--                            </div>-->
-
-
                             <div>
                                 <h3 id="subtitle03_01">Papers</h3>
                                 <ol reversed>
                                     <li>
+                                        <a class="custom-link" href="#">
+                                            Concept-cognitive Neural Network for Fairness-aware Maximal Cliques Identification.
+                                        </a><br>
+                                        F. Hao,<span class="paper-author">M. Tao</span>, L. Wei, H. Zhi, S.O. Kuznetsov and G. Min.
+                                        <span class="paper-journal">IEEE Transactions on Emerging Topics in Computing (2026)</span>., Accepted.
+                                        <br>
+                                        <a class="introduction_text"> (IEEE-Transactions、SCI二区)</a>
+                                    </li>
+                                    <li>
                                         <a class="custom-link" href="https://ieeexplore.ieee.org/abstract/document/10669628">
                                             Fairness-Aware Maximal Cliques Identification in Attributed Social Networks With Concept-Cognitive Learning.
                                         </a><br>
-                                        &nbsp <span style="color:black;font-weight:bold;">M. Tao</span>, F. Hao, L. Wei, H. Zhi, S. O. Kuznetsov and G. Min.
-                                        &nbsp <span style="color:black;font-weight:bold;">IEEE Transactions on Computational Social Systems (2024)</span>., In Press.
+                                        <span class="paper-author">M. Tao</span>, F. Hao, L. Wei, H. Zhi, S.O. Kuznetsov and G. Min.
+                                        <span class="paper-journal">IEEE Transactions on Computational Social Systems (2024)</span>., In Press.
                                         <br>
-                                        <a class="introduction_text"> &nbsp (IEEE-Transactions、SCI二区、CCF-C、社会计算领域顶刊)</a>
+                                        <a class="introduction_text"> (IEEE-Transactions、SCI二区、CCF-C、社会计算领域顶刊)</a>
                                     </li>
                                     <li>
                                         <a class="custom-link" href="https://ieeexplore.ieee.org/abstract/document/10189797">
                                             Discovering Fairness-aware Structures from Social Networks Based on Concept-cognitive Learning
 
                                         </a><br>
-                                        &nbsp <span style="color:black;font-weight:bold;">M. Tao</span>, F. Hao, Y. Zhu, D. -S. Park and X. Xu.
-                                        &nbsp <span style="color:black;font-weight:bold;">IEEE Ubiquitous Intelligence & Computing (2022)</span>., In Press.
+                                        <span class="paper-author">M. Tao</span>, F. Hao, Y. Zhu, D. -S. Park and X. Xu.
+                                        <span class="paper-journal">IEEE Ubiquitous Intelligence & Computing (2022)</span>., In Press.
                                         <br>
-                                        <a class="introduction_text"> &nbsp (CCF-C、EI)</a>
+                                        <a class="introduction_text"> (CCF-C、EI)</a>
                                     </li>
                                     <li>
                                         <a class="custom-link" href="https://link.springer.com/chapter/10.1007/978-981-15-8101-4_51">
                                             Paper Recommend Based on LDA and PageRank
                                         </a><br>
-                                        &nbsp <span style="color:black;font-weight:bold;">Tao, M.</span>, Yang, X., Gu, G., Li, B.
-                                        &nbsp <span style="color:black;font-weight:bold;">Artificial Intelligence and Security. ICAIS (2020)</span>., In Press.
+                                        <span class="paper-author">Tao, M.</span>, Yang, X., Gu, G., Li, B.
+                                        <span class="paper-journal">Artificial Intelligence and Security. ICAIS (2020)</span>., In Press.
                                     </li>
                                     <li>
                                         <a class="custom-link" href="https://xueshu.baidu.com/usercenter/paper/show?paperid=1v7502p07h0102e0ur0u0rc04f337975&site=xueshu_se">
                                             基于MIMIC-Ⅲ数据库对ICU患者结局预测的研究
                                         </a><br>
-                                        &nbsp Huang, P., Lian, Z., <span style="color:black;font-weight:bold;">Tao, M.</span>, Du, J., Zhao, Y.
-                                        &nbsp <span style="color:black;font-weight:bold;">中国医疗设备 (2019)</span>., In Press.
+                                        Huang, P., Lian, Z., <span class="paper-author">Tao, M.</span>, Du, J., Zhao, Y.
+                                        <span class="paper-journal">中国医疗设备 (2019)</span>., In Press.
                                     </li>
                                 </ol>
                             </div>
@@ -341,8 +349,12 @@
                                 <h3 id="subtitle03_02">Projects</h3>
                                 <ol reversed>
                                     <li>
-                                            <a class="custom-link"> 基于概念认知学习的西江航运多维网络关键结构识别方法研究.</a><br>
-                                            &nbsp 校青年项目 （2026.1-2028.12）.（主持） 
+                                            <a class="custom-link"> 基于大数据与跨国文化分析的六堡茶国际品牌数字化出海服务平台.</a>
+                                            <span class="project-info">（市厅级，参与）</span>
+                                    </li>
+                                    <li>
+                                            <a class="custom-link"> 基于概念认知学习的西江航运多维网络关键结构识别方法研究.</a> &nbsp; 校青年项目 （2026.1-2028.12）.
+                                            <span class="project-info">（校级，主持）</span>
                                     </li>
                                 </ol>
                             </div>
@@ -353,8 +365,8 @@
                                         <a class="custom-link" href="https://xueshu.baidu.com/ndscholar/browse/detail?paperid=195k02k0jk2502p0cj2k0vu0yc044076">
                                             一种社交网络公平结构挖掘方法
                                         </a><br>
-                                        &nbsp F. Hao, <span style="color:black;font-weight:bold;">M. Tao</span>, J. Chen, L. Guo and W. Yu.
-                                        &nbsp <span style="color:black;font-weight:bold;">CN202211204834.5. (2022 China)</span>., With public.
+                                        F. Hao, <span class="paper-author">M. Tao</span>, J. Chen, L. Guo and W. Yu.
+                                        <span class="paper-journal">CN202211204834.5. (2022 China)</span>., With public.
                                         <br>
                                     </li>
                                 </ol>
@@ -367,7 +379,7 @@
                             <h2 id="subtitle04">资源下载</h2>
                             <div class="tool">
                                 <li><a href="./downloadPage.html"> 自学课程笔记下载(PDF) </a></li>
-                                <li><a href="./Resources/TempSoft/Dev-Cpp 5.11 TDM-GCC 4.9.2 Setup.exe" download="Dev-Cpp.exe">Dev-Cpp 5.11 TDM-GCC 4.9.2安装程序</a></li>
+                                <li><a href="./Resources/TempSoft/Dev-Cpp-5.11-TDM-GCC-4.9.2-Setup.exe" download="Dev-Cpp.exe">Dev-Cpp 5.11 TDM-GCC 4.9.2安装程序</a></li>
 
 <!--                                <li><a href="">工具下载页面(待整理) </a></li>-->
                                 <!--                            <li><a href="https://www.ziyuanpro.com">资源PRO-ZiYuanPro.Com | 一个免费分享精品资源的网站</a></li>-->
@@ -392,13 +404,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- 用于进行网页访问次数计数 -->
     <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <!-- 引入 typed，用于创建动态的打字机效果 -->
-    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.js"></script>
-    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.js"></script>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.js" type="module"></script>
-    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/lazysizes/5.3.2/lazysizes.min.js" async></script>
-    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/sweetalert/2.1.2/sweetalert.min.js"></script>
 
 <!--    &lt;!&ndash; APlayer ， 一个用于播放音频的插件&ndash;&gt;-->
 <!--    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css">-->
@@ -413,13 +418,18 @@
 
 
     <!--鼠标点击效果-->
-    <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 
-    <!-- MetingJS -->
-    <script src="assets/js/meting.js"></script>
+
+
+
+    <!-- MetingJS - 暂时禁用，待添加音乐功能时启用 -->
+    <!--    <script src="assets/js/meting.js"></script>-->
     <script src="assets/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.14.0/js-yaml.min.js"></script>
     <script src="assets/js/switch_language.js" defer></script>
+    <script src="assets/js/render_papers.js" defer></script>
+
 
 
 

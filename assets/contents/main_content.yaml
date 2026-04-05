@@ -11,8 +11,9 @@ en:
   role04: "Work: Artificial Intelligence Teacher"
   subtitle02: &s02_en "Information"
   join_us: I am looking for motivated students with solid background in mathematics and programming. If you are interested in doing research with me, please feel free to contact me via email.
+
   loc_2: *s02_en
-  research_interests: "Currently, he is the teacher at the School of Electronic Information and Artificial Intelligence, Wuzhou University. His research interests include data mining, concept-cognitive learning, and artificial intelligence. He have been invited to serve as a reviewer for WWWj (CCF-B) and IEEE-DSCI. He have published 4 papers in journals and conferences such as IEEE TCSS、IEEE-UIC、ICAIS, and have applied for 1 invention patent."
+  research_interests: "Currently, he is the teacher at the School of Electronic Information and Artificial Intelligence, Wuzhou University. His research interests include data mining, concept-cognitive learning, and artificial intelligence. He have been invited to serve as a reviewer for WWWj (CCF-B), the 10th APWeb-WAIM (CCF-C) and IEEE-DSCI. He have published 4 papers in journals and conferences such as IEEE TCSS、IEEE-UIC、ICAIS, and have applied for 1 invention patent."
   subtitle03: &s03_en "Achievements"
   loc_3: *s03_en
   subtitle03_01: "Papers"
@@ -26,16 +27,16 @@ zh:
   subtitle01: &s01_zh "个人经历"
   loc_1: *s01_zh
   languageButton: "Switch English / 切换英文"
-  university01: "南京航空航天大学（江苏南京）"
-  university03: "陕西师范大学 (陕西西安)"
-  university04: "梧州学院 (广西梧州)"
+  university01: "南京航空航天大学（江苏, 南京）"
+  university03: "陕西师范大学 (陕西, 西安)"
+  university04: "梧州学院 (广西, 梧州)"
   role01: "专业: 软件工程"
   role03: "专业: 软件工程"
   role04: "工作: 人工智能教师"
   subtitle02: &s02_zh "个人信息"
   join_us: "欢迎加入我的研究项目，如果你有想法请随时通过电子邮件与我联系。"
   loc_2: *s02_zh
-  research_interests: "现为梧州学院电子信息与人工智能学院教师，研究兴趣包括数据挖掘、概念认知学习和人工智能。受邀担任 WWWj(CCF-B 类)和 IEEE-DSCI 审稿人，在 IEEE TCSS、IEEE-UIC、ICAIS等期刊、会议上发表论文 4 篇，申请发明专利 1 项。"
+  research_interests: "现为梧州学院电子信息与人工智能学院教师，研究兴趣包括数据挖掘、概念认知学习和人工智能。受邀担任 WWWj(CCF-B 类期刊)、APWeb-WAIM（CCF-C类会议）和 IEEE-DSCI 审稿人，在 IEEE TCSS、IEEE-UIC、ICAIS等期刊、会议上发表论文 4 篇，申请发明专利 1 项。"
   subtitle03: &s03_zh "项目成果"
   loc_3: *s03_zh
   subtitle03_01: "论文"
